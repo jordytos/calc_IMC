@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="texViewPoids">What is your current weight :</string>
+    <string name="textViewTaille">What is your height :</string>
+    <string name="metre">Meter</string>
+    <string name="centimetre">Centimeter</string>
+    <string name="commentaire">More details</string>
+    <string name="calculer_lmc">CALCULATE BMI</string>
+    <string name="resultat">Result :</string>
+    <string name="comment_result">You have to click on the Calculate BMI button to get a result.</string>
+    <string name="hint_poids">Weight :</string>
+    <string name="hint_taille">Height :</string>
+</resources>

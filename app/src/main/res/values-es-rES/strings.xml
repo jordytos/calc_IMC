@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora de IMC</string>
+    <string name="texViewPoids">Determina tu peso:</string>
+    <string name="textViewTaille">Determina tu talla :</string>
+    <string name="metre">Metro</string>
+    <string name="centimetre">Centímetro</string>
+    <string name="commentaire">Más detalles</string>
+    <string name="calculer_lmc">CALCULAR EL IMC</string>
+    <string name="resultat">"Resultado : "</string>
+    <string name="comment_result">Tienes que hacer clic en el botón \"Calcular IMC\" para obtener un resultado.</string>
+    <string name="hint_poids">"Peso : "</string>
+    <string name="hint_taille">"Talla : "</string>
+</resources>
