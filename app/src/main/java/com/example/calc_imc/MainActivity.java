@@ -57,22 +57,26 @@ public class MainActivity extends AppCompatActivity {
             float tValue = Float.valueOf(t);
 
 
+
             // Puis on vérifie que la taille est cohérente
             if(tValue <= 0)
                 Toast.makeText(MainActivity.this, "La taille doit être positive", Toast.LENGTH_SHORT).show();
             else {
                 float pValue = Float.valueOf(p);
+
                 if(pValue <= 0)
                     Toast.makeText(MainActivity.this, "Le poids doit etre positif", Toast.LENGTH_SHORT).show();
 
                 else {
                     // Si l'utilisateur a indiqué que la taille était en centimètres
                     // On vérifie que la Checkbox sélectionnée est la deuxième à l'aide de son identifiant
-                    if (group.getCheckedRadioButtonId() == R.id.radio_centimetre) tValue = tValue / 100;
-                    else if(group.getCheckedRadioButtonId() == R.id.radio_metre) tValue = tValue / 100*100;
-                    else {
-                        popUp("Veillez saisir une valeur correct");
+                    if((t.contains(",")) || (t.contains(".")) ){
+                        group.check(R.id.radio_metre);
                     }
+
+                    if (group.getCheckedRadioButtonId() == R.id.radio_centimetre) tValue = tValue / 100;
+                    if(group.getCheckedRadioButtonId() == R.id.radio_metre) tValue = tValue / 100*100;
+
                     float imc = pValue / (tValue * tValue);
 
                     String resultat="Votre IMC est " + imc+" : ";
